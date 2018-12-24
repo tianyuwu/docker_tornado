@@ -1,0 +1,4 @@
+meta:
+  title: "Python基础镜像"
+  buildscript: "build.sh"
+  language: "python"

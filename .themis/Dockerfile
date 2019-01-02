@@ -2,7 +2,7 @@
 FROM python:3.7.1-alpine
 
 # Installing client libraries and any other package you need
-RUN apk update && apk add libpq gcc libffi-dev musl-dev postgresql-dev make tzdata
+RUN apk update && apk add libpq gcc libffi-dev musl-dev postgresql-dev make tzdata bash
 
 # 设置时区
 RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
